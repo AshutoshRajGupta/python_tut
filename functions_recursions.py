@@ -13,6 +13,7 @@
 
 # print(sum(2, 3))    # 2 and 3 are arguments
 
+
 """# average of three numbers
 """
 # def calc_avg(a, b, c):
@@ -21,6 +22,7 @@
 #     return avg
 
 # print(calc_avg(23, 45, 67))
+
 
 """ 
 Default parameters:  assigning a default value to parameter, which is used when no argument is passed.
@@ -32,12 +34,14 @@ Default parameters:  assigning a default value to parameter, which is used when 
 #     return a*b
 # prod()
 
+
 """ wap to print length of a list (list is the parameter)"""
 
 # cities = ["delhi", "noida", "chennai", "pune", "mumbai"]
 # def print_list(list):
 #     print(len(list))
 # print_list(cities)
+
 
 """ wap to print the elements of a list in single line (list is parameter)"""
 # cities = ["delhi", "noida", "chennai", "pune", "mumbai"]
@@ -70,6 +74,7 @@ Default parameters:  assigning a default value to parameter, which is used when 
 #     show(n-1)
 # show(5)
 
+
 """ factroial uing recursion"""
 
 # def fact(n):
@@ -78,6 +83,7 @@ Default parameters:  assigning a default value to parameter, which is used when 
 #     else:
 #         return n*fact(n-1)
 # print(fact(5))
+
 
 """ recursive function to calculate sum of first n numbers"""
 
