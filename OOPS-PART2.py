@@ -224,6 +224,7 @@ print(s1.percentage)
 # so to do this i a better way is that we can use property decorator
 
 
+"""
 class Student:
     def __init__(self, phy, chem, math):
         self.phy = phy
@@ -239,5 +240,69 @@ s1 = Student(98, 89, 87)
 print(s1.percentage)
 s1.phy = 86
 print(s1.percentage)
+"""
+
 
 # so here the property act as a attribute and then update the value heer only
+
+
+# Polymorphism -
+# Operator overloading - when the same operator is allowed to have different meaning according to the context
+
+# complex number example
+"""
+class Complex:
+    def __init__(self, real, img):
+        self.real = real
+        self.img = img
+
+    def showNumber(self):
+        print(self.real, "i +", self.img, "j")
+
+# dunder function
+    def __add__(self, num2):
+        newReal = self.real+num2.real
+        newImg = self.img+num2.img
+        return Complex(newReal, newImg)
+    
+    def __sub__(self, num2):
+        newReal = self.real-num2.real
+        newImg = self.img-num2.img
+        return Complex(newReal, newImg)
+
+
+num1 = Complex(1, 3)
+num1.showNumber()
+
+
+num2 = Complex(4, 5)
+num2.showNumber()
+
+# num3 = num1.add(num2)
+num3 = num1+num2
+num3.showNumber()
+"""
+
+
+# Method Overriding - Method overriding allows a subclass to provide a specific
+# implementation of a method that is already defined in its superclass
+class Animal:
+    def sound(self):
+        raise NotImplementedError("Subclass must implement abstract method")
+
+
+class Dog(Animal):
+    def sound(self):
+        return "Bark"
+
+
+class Cat(Animal):
+    def sound(self):
+        return "Meow"
+
+
+# Example usage
+animals = [Dog(), Cat()]
+
+for animal in animals:
+    print(animal.sound())
