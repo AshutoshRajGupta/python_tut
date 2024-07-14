@@ -64,13 +64,13 @@ while condition:
 
 
 """ for loops are used for sequential traversal. for traversing list,string, tuples etc. """
-# lis = [1, 2, 3]
-# for el in lis:
-#     print(el)
+lis = [1, 2, 3]
+for el in lis:
+    print(el)
 
-# beggies = ["potato", "brinjal"]
-# for val in beggies:
-#     print(val)
+beggies = ["potato", "brinjal"]
+for val in beggies:
+    print(val)
 
 """ number found using for loop"""
 # this is we called linear search
