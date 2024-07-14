@@ -24,8 +24,8 @@ print(student)   # output- ["karan",45,"Delhi"]
 # print(marks[1:4])  ----> [98,78,445]
 
 # functions /methods used in lists
-"""
-list = [2, 1, 3]
+
+list = [2, 1, 2, 4, 1, 3, 1, 3]
 list.append(4)      # add element at last at the end
 print(list)
 
@@ -44,9 +44,15 @@ print(list)
 list.remove(1)   # removes first occurence of element
 print(list)
 
-list.pop(idx)   # removes element at index
+list.pop(2)   # removes element at index
 print(list)
-"""
+
+del list[1]
+print(list)
+
+print(sum(list))
+
+print(list.count(1))
 
 
 # wap to ask the user to enter names of their 3favourite movie and append them into list
